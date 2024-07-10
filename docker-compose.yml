@@ -5,6 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: app
+    command: sh -c "npm install && npm start"
     tty: true
     ports:
       - "3000:3000"
